@@ -1,0 +1,75 @@
+main {
+    width: 50%;
+}
+main h1 {
+    position: relative;
+    width: 462px;
+    height: 61px;
+    left: -146px;
+    top: 80px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+
+    text-transform: lowercase;
+    color: #FFA000;
+}
+main img {
+    position: relative;
+    width: 592px;
+    height: 311px;
+    left: -146px;
+    top: 70px;
+    background: #C4C4C4;
+}
+#card-risorto-de-abobora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+.tags {
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--bg-button) #176902;
+    text-align: center;
+
+    position: relative;
+    width: 44px;
+    height: 17px;
+    left: -100px;
+    top: 90px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: lowercase;
+
+    color: #176902;
+
+}
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    width: 100%;
+   
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
