@@ -5,7 +5,6 @@
  }
 html, body {
     width: 100%;
-
     font-size: 16px;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
@@ -47,13 +46,16 @@ a {
     text-transform: lowercase;
     color: #FFA000;
 }
-#card-horizontal {
+.card-horizontal {
     display: flex;
     justify-content: space-around;
     width: 100vw;
+    align-items: center;
 }
 .card-receita {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
@@ -76,10 +78,11 @@ a {
 }
 #comer-e-viver {
     background-image: url('../../assets/images/comer-e-viver.png');
+    width: 100%;
 }
 #titulo-comer-e-viver {
     left: 122px;
-    top: 1735px;
+    top: 1915px;
     font-size: 65px;
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
@@ -92,8 +95,55 @@ a {
     width: 424px;
     height: 333px;
     left: 123px;
-    top: 1900px;
+    top: 2100px;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+}
+@media screen and (max-width: 1280px) {
+    #receitas-com-afeto {
+        height: 20rem;  
+    }
+    #receitas-com-afeto img {
+        height: 20rem;
+    }
+    #receitas-com-afeto h1 {
+        top: 14rem;
+        font-size: 28px;
+        left: 14rem;
+        line-height: 40px;
+    }
+    #titulo-receitas-da-semana {
+        font-size: 36px;
+        left: -14rem;
+        top: 30rem;
+    }
+    .card-receita {
+        text-align: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card-horizontal {
+        display: block;
+    }
+    .card-receita {
+        margin: 1rem;   
+    }
+    .card-receita img {
+        width: 90vw;
+        height: 49vw;
+    }  
+    #comer-e-viver h2 {
+        top: 1700px;
+        font-size: 40px;
+        left: 1rem;
+    } 
+    #comer-e-viver p {
+        top: 1800px;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        left: -1px;
+    } 
 }
