@@ -46,11 +46,19 @@ a {
     text-transform: lowercase;
     color: #FFA000;
 }
+#secao-2 {
+    margin: 120px 0px;
+}
+#secao-2 .secao-generica {
+    margin: -200px 0px;
+} 
+
 .card-horizontal {
     display: flex;
     justify-content: space-around;
     width: 100vw;
     align-items: center;
+    
 }
 .card-receita {
     display: flex;
